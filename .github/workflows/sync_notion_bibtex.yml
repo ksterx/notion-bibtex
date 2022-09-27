@@ -1,0 +1,16 @@
+name: Sync Notion database with BibTeX file
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  sync_notion_bibtex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync Notion database with BibTeX file
+        uses: jethrokuan/sync-notion-bibtex@v1
+        run: python sync.py
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
