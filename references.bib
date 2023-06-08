@@ -22512,3 +22512,42 @@
   keywords  = "Jun 8 import",
   copyright = "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
 }
+
+@ARTICLE{Lee2023-wl,
+  title    = "{Large-Dimensional} Multibody Dynamics Simulation Using Contact
+              Nodalization and Diagonalization",
+  author   = "Lee, Jeongmin and Lee, Minji and Lee, Dongjun",
+  abstract = "In this article, we propose a novel multibody dynamics simulation
+              framework that can efficiently deal with large-dimensionality and
+              complementarity multicontact conditions. Typical contact
+              simulation approaches require performing contact impulse
+              fixed-point iteration, which has high time-complexity from
+              large-size matrix factorization and multiplication, as well as
+              susceptibility to ill-conditioned contact situations. To
+              circumvent this, we propose a novel framework based on velocity
+              fixed-point iteration (V-FPI), which, by utilizing a certain
+              surrogate dynamics and contact nodalization (with virtual nodes),
+              we achieve not only intercontact decoupling but also their
+              interaxes decoupling (i.e., contact diagonalization) at each
+              iteration step. This then enables us to one-shot/parallel-solve
+              the contact problem during each V-FPI iteration-loop, while
+              avoiding large-size/dense matrix inversion/multiplication,
+              thereby, significantly speeding up the simulation time with
+              improved convergence property. We theoretically show that the
+              solution of our framework is consistent with that of the original
+              problem and, further, elucidate mathematical conditions for the
+              convergence of our proposed solver. Performance and properties of
+              our proposed simulation framework are also demonstrated and
+              experimentally validated for various
+              large-dimensional/multicontact scenarios including deformable
+              objects.",
+  journal  = "IEEE Trans. Rob.",
+  volume   =  39,
+  number   =  2,
+  pages    = "1419--1438",
+  month    =  apr,
+  year     =  2023,
+  keywords = "Mathematical models;Robots;Data models;Convergence;Symmetric
+              matrices;Friction;Behavioral sciences;Contact modeling;dexterous
+              manipulation;dynamics;simulation and animation;Jun 8 import"
+}
